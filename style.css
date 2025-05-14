@@ -1,0 +1,91 @@
+/* 기본 리셋 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans KR', sans-serif; color: #333; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+/* 헤더 */
+header { padding: 20px 0; display: flex; justify-content: space-between; align-items: center; }
+.logo-text { font-size: 1.5rem; font-weight: bold; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a { color: #333; text-decoration: none; font-weight: 500; }
+
+/* 히어로 */
+#hero { background: url('https://i.ibb.co/hJTNP49X/001-9.png') center/cover no-repeat; padding: 120px 0; text-align: center; }
+.hero-content { padding: 40px 20px; }
+.hero-content h1 { color: #222; font-size: 2.5rem; margin-bottom: 20px; }
+.hero-content p { color: #222; font-size: 1.2rem; margin-bottom: 30px; }
+.btn-primary { display: inline-flex; align-items: center; justify-content: center; background-color: #FEE500; color: rgba(0,0,0,0.85); font-size: 16px; font-weight: 700; height: 45px; padding: 0 16px; border-radius: 8px; border: none; text-decoration: none; cursor: pointer; }
+
+/* 플랫폼 섹션 */
+.platforms { background: #fafafa; padding: 60px 0; text-align: center; }
+.platforms h2 { font-size: 2rem; margin-bottom: 40px; }
+.platform-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 20px; justify-items: center; }
+.platform-item { width: 120px; height: 120px; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; font-weight: 500; }
+.platform-item img { width: 48px; height: 48px; margin-bottom: 10px; }
+.platform-item.instagram { background: linear-gradient(45deg, #fa9c58, #e9795f, #db4565, #bf256e, #a51274); }
+.platform-item.youtube { background: #FF4C4C; }
+.platform-item.facebook { background: #97aad3; }
+.platform-item.threads { background: #555; }
+.platform-item.telegram { background: #82b8d8; }
+.platform-item.tiktok { background: #111; }
+.platform-item.twitter { background: #54A9FF; }
+.platform-item.soundcloud { background: #FF7F32; }
+
+/* 특징 섹션 */
+.features { background: linear-gradient(135deg, #6658f7, #9677ff); padding: 80px 0; color: #fff; text-align: center; }
+.features h2 { font-size: 2rem; margin-bottom: 50px; line-height: 1.4; }
+.feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px; justify-items: center; }
+.feature-item { max-width: 300px; }
+.feature-icon { width: 120px; height: 120px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; }
+.feature-icon img { width: 64px; height: 64px; }
+.feature-item h3 { font-size: 1.25rem; margin-bottom: 12px; }
+.feature-item p { font-size: 0.9rem; line-height: 1.6; color: rgba(255, 255, 255, 0.9); }
+
+/* 인기 SNS알고리즘 구조 섹션 */
+.services { padding: 60px 0; }
+.services h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; }
+.service-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.service-item { background: #f9f9f9; padding: 20px; border-radius: 5px; text-align: center; }
+.service-item h3 { font-size: 1.2rem; margin-bottom: 16px; }
+.service-item p { font-size: 0.95rem; margin-top: 12px; }
+
+/* 푸터 */
+.site-footer { background: #333; color: #ccc; padding: 60px 0; font-size: 12px; }
+.footer-grid { display: flex; justify-content: space-between; flex-wrap: wrap; }
+.footer-col { flex: 1; min-width: 200px; }
+.footer-col h3 { color: #fff; margin-bottom: 8px; font-size: 14px; }
+.footer-col ul { list-style: none; padding: 0; }
+.footer-col li { margin-bottom: 6px; }
+.footer-col a { color: #ccc; text-decoration: none; font-size: 12px; }
+
+/* SNS 문의하기 버튼 */
+.footer-col .sns-btn { display: inline-block; margin-right: 10px; padding: 6px 12px; border-radius: 4px; text-decoration: none; font-weight: 500; font-size: 12px; }
+.sns-btn.kakao { background: #FEE500; color: #333; }
+.sns-btn.instagram { background: #E4405F; color: #fff; }
+.sns-btn.telegram { background: #0088CC; color: #fff; }
+
+/* 톡상담 버튼 */
+.chat-widget { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; }
+.chat-btn { display: flex; align-items: center; background: #fff; padding: 8px 12px; border-radius: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); text-decoration: none; color: #333; font-weight: 500; font-size: 14px; }
+.chat-btn img { width: 24px; height: 24px; margin-right: 8px; }
+
+/* 마지막 CTA 섹션 */
+.cta { background: #eef2ff; padding: 80px 0; text-align: center; }
+.cta h2 { font-size: 1.75rem; margin-bottom: 30px; color: #333; }
+.btn-cta { display: inline-block; background: #634be9; color: #fff; padding: 16px 40px; border-radius: 50px; font-size: 1rem; text-decoration: none; font-weight: 600; }
+.btn-cta:hover { background: #4a3cc1; }
+
+/* 반응형(Mobile) */
+@media (max-width: 768px) {
+  nav ul { flex-direction: column; align-items: center; gap: 12px; }
+  #hero { padding: 80px 0; }
+  .hero-content h1 { font-size: 2rem; }
+  .hero-content p { font-size: 1rem; }
+  .platform-list { grid-template-columns: repeat(2, 1fr); }
+  .feature-list { grid-template-columns: 1fr; }
+  .service-list { grid-template-columns: 1fr; }
+  .footer-grid { flex-direction: column; align-items: center; }
+}
+@media (max-width: 480px) {
+  .platform-list { grid-template-columns: 1fr; }
+}

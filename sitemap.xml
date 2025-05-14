@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+                          https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- 홈페이지 -->
+  <url>
+    <loc>https://marketersns.kr/</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 블로그 -->
+  <url>
+    <loc>https://marketersns.kr/blog</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 개인정보처리방침 -->
+  <url>
+    <loc>https://marketersns.kr/privacyPolicy</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 서비스 이용약관 -->
+  <url>
+    <loc>https://marketersns.kr/termofservice</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- 카카오 문의하기 (외부 링크이므로 일반적으로 포함 안 함) -->
+  <!-- 추가 페이지가 있으면 여기에 계속 나열 -->
+</urlset>

@@ -1,0 +1,7 @@
+# robots.txt for https://marketersns.kr
+
+User-agent: *
+Disallow:
+
+Sitemap: https://marketersns.kr/sitemap.xml
+Host: https://marketersns.kr
