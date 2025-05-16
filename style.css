@@ -89,3 +89,72 @@ nav a { color: #333; text-decoration: none; font-weight: 500; }
 @media (max-width: 480px) {
   .platform-list { grid-template-columns: 1fr; }
 }
+
+.about-content {
+  padding: 60px 0;
+  line-height: 1.7;
+  color: #333;              /* 진한 텍스트 컬러 */
+}
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+.about-content p {
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+.about-content ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* 본문 이미지 스타일 */
+.about-image {
+  text-align: center;
+  margin: 30px 0;
+}
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 연락처 아이콘과 텍스트 정렬 */
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+.contact-info img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.about-image {
+  text-align: center;
+  margin: 30px 0;
+}
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* About 섹션 사진 크기 조정 */
+.about-content .about-image {
+  text-align: center;
+  margin: 30px 0;
+}
+.about-content .about-image img {
+  max-width: 80%;      /* 컨테이너 너비의 80% 이내로 축소 */
+  height: auto;        /* 비율 유지 */
+  display: inline-block;
+  border-radius: 8px;  /* 원하시면 모서리 둥글게 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
