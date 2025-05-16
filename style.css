@@ -5,7 +5,19 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #333; }
 
 /* 헤더 */
 header { padding: 20px 0; display: flex; justify-content: space-between; align-items: center; }
-.logo-text { font-size: 1.5rem; font-weight: bold; }
+.logo-text {
+  font-size: 1.5rem;       /* 기존 폰트 크기 */
+  font-weight: bold;       /* 기존 굵기 */
+  color: inherit;          /* 부모의 텍스트 컬러(#333) 상속 */
+  text-decoration: none;   /* 밑줄 제거 */
+}
+/* hover 시에도 색 변화를 없애려면 */
+.logo-text:hover,
+.logo-text:focus {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
 nav ul { list-style: none; display: flex; gap: 20px; }
 nav a { color: #333; text-decoration: none; font-weight: 500; }
 
@@ -157,4 +169,55 @@ nav a { color: #333; text-decoration: none; font-weight: 500; }
   display: inline-block;
   border-radius: 8px;  /* 원하시면 모서리 둥글게 */
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ──────────── Target Audience 섹션 ──────────── */
+#audience {
+  background: url('https://i.ibb.co/tkJ93Vm/audience-bg.png') center/cover no-repeat;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+#audience .container h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  color: black;
+}
+
+/* 3열 그리드 (데스크탑) */
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 아이템 스타일 */
+.audience-item {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 20px;
+}
+.audience-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.4;
+  text-align: center;
+}
+.audience-item span {
+  color: #e94e3c;   /* 강조 레드 */
+  font-weight: 700;
+}
+
+/* 모바일: 1열 */
+@media (max-width: 768px) {
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+  #audience .container h2 {
+    font-size: 1.5rem;
+  }
 }
