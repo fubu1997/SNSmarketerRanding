@@ -173,7 +173,7 @@ nav a { color: #333; text-decoration: none; font-weight: 500; }
 
 /* ──────────── Target Audience 섹션 ──────────── */
 #audience {
-  background: url('https://i.ibb.co/tkJ93Vm/audience-bg.png') center/cover no-repeat;
+  background: url('img/audience-bg.png') center/cover no-repeat;
   padding: 100px 0;
   color: #fff;
   text-align: center;
