@@ -221,3 +221,64 @@ nav a { color: #333; text-decoration: none; font-weight: 500; }
     font-size: 1.5rem;
   }
 }
+
+
+.youtube-solutions {
+  /* 위아래 여백을 늘려줍니다 */
+  padding: 10px 0;
+  margin: 10px 0; /* 필요에 따라 조정 */
+}
+.youtube-solutions h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.youtube-solutions .subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.youtube-solutions .swiper-container {
+  width: 100%;
+  padding: 20px 0;      /* 위아래 여백 */
+  box-sizing: border-box;
+}
+/* 슬라이드 wrapper가 flex 컨테이너로 작동하도록 */
+.youtube-solutions .swiper-wrapper {
+  display: flex;
+}
+/* 각 슬라이드는 절대 겹치지 않도록 flex-shrink 0 유지 */
+.youtube-solutions .swiper-slide {
+  flex-shrink: 0;
+}
+/* 이미지가 슬라이드 너비에 꽉 차도록 */
+.youtube-solutions .swiper-slide img {
+  max-height: 500px;    /* ↑ 여기만 조절 */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.youtube-solutions img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+.youtube-solutions h3 {
+  margin-top: 12px;
+  font-size: 1rem;
+  text-align: center;
+  color: #222;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333;
+}
+.swiper-pagination {
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-top: 16px;
+}

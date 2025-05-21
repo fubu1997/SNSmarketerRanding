@@ -57,6 +57,8 @@
   </script>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   <header class="container">
@@ -209,6 +211,42 @@
     </div>
   </section>
 
+  <!-- ────────── YouTube 솔루션 Carousel ────────── -->
+  <section id="youtube-solutions" class="youtube-solutions">
+    <div class="container">
+      <h2>검증된 후기</h2>
+      <p class="subtitle">다양한 키워드 후기를 만나보세요.</p>
+      <p class="subtitle">정확한 순위측정을 위해 시크릿모드 진입검색</p>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/solution-01.png" alt="부동산 키워드 관리" />
+            <h3>부동산 키워드 관리</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/solution-02.png" alt="결제홍보관련 키워드" />
+            <h3>결제홍보관련 키워드</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/solution-03.png" alt="라이브방송 키워드" />
+            <h3>주식 라이브 방송 키워드</h3>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/solution-04.png" alt="주식홍보라이브 키워드" />
+            <h3>각종 라이브 키워드</h3>
+          </div>
+          <!-- 필요하면 추가 슬라이드 삽입 -->
+        </div>
+        <!-- Fraction Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Prev / Next 화살표 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+  </section>
+
 
 
   <!-- 마지막 CTA 섹션 -->
@@ -256,5 +294,48 @@
       <span>톡상담</span>
     </a>
   </div>
+
+  <script>
+  new Swiper('.swiper-container', {
+    // ↓ 모바일 기본: 한 번에 1개, 센터링 끔
+    slidesPerView: 1,
+    spaceBetween: 10,
+    centeredSlides: false,
+    loop: false,
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+
+    breakpoints: {
+      // 480px 이상: 2개씩, 가운데 슬라이드(index 1)를 중앙으로
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        centeredSlides: true,
+        initialSlide: 1,
+      },
+      // 768px 이상: 3개씩, 가운데 슬라이드(index 1)를 중앙으로
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: true,
+        initialSlide: 1,
+      },
+      // 1024px 이상: 4개씩, 가운데 두 슬라이드(index 1,2)가 중앙에 위치
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        centeredSlides: true,
+        initialSlide: 1,
+      }
+    }
+  });
+  </script>
 </body>
 </html>
