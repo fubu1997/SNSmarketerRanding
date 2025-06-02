@@ -79,19 +79,13 @@
 <body>
   <header class="container">
     <a href="index.html" class="logo-text">SNS마케터</a>
-    <button class="nav-toggle" aria-label="메뉴 열기"><span class="hamburger"></span></button>
-    <nav>
+    <button class="nav-toggle" aria-label="메뉴 열기">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="main-nav">
       <ul>
         <li><a href="/about.html">회사소개</a></li>
-        <!-- onclick 속성 추가: 클릭 시 gtag_report_conversion 호출 -->
-        <li>
-          <a 
-            href="https://pf.kakao.com/_IseLb/chat"
-            onclick="return gtag_report_conversion(this.href);"
-          >
-            문의하기
-          </a>
-        </li>
+        <li><a href="https://pf.kakao.com/_IseLb/chat" target="_blank" >문의하기</a></li>
       </ul>
     </nav>
   </header>
@@ -100,7 +94,7 @@
     <div class="container hero-content">
       <h1>SNS 통합 마케팅 솔루션</h1>
       <p>24시간 이용가능한 셀프 마케팅 서비스</p>
-      <a href="https://pf.kakao.com/_IseLb/chat" class="btn-primary">지금 문의하기</a>
+      <a href="https://pf.kakao.com/_IseLb/chat" target="_blank"  class="btn-primary">지금 문의하기</a>
     </div>
   </section>
 
@@ -277,17 +271,7 @@
   <section id="cta" class="cta">
     <div class="container">
       <h2>더 궁금하신 점이 있으신가요?</h2>
-      <!-- 기존 -->
-      <!-- <a href="https://pf.kakao.com/_IseLb/chat" class="btn-cta">서비스 문의하기</a> -->
-
-      <!-- 수정 후 -->
-      <a
-        href="https://pf.kakao.com/_IseLb/chat"
-        class="btn-cta"
-        onclick="return gtag_report_conversion(this.href);"
-      >
-        서비스 문의하기
-      </a>
+      <a href="https://pf.kakao.com/_IseLb/chat" target="_blank" class="btn-cta">서비스 문의하기</a>
     </div>
   </section>
 
@@ -298,32 +282,34 @@
         <ul>
           <li><a href="#">개인정보처리방침</a></li>
           <li><a href="#">서비스 이용약관</a></li>
-          <li><a href="https://pf.kakao.com/_IseLb/chat" onclick="return gtag_report_conversion(this.href);">서비스 문의하기</a></li>
+          <li><a href="https://pf.kakao.com/_IseLb/chat" target="_blank"  onclick="return gtag_report_conversion(this.href);">서비스 문의하기</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h3>회사소개</h3>
-        <p>대표자: 이 경 해</p>
-        <p>사업자번호: 242-06-01925</p>
-        <p>통신판매업신고: 제 2023-전주덕진-0564</p>
+        <ul>
+          <li><a href="#">대표자: 이 경 해</a></li>
+          <li><a href="#">사업자번호: 242-06-01925</a></li>
+          <li><a href="#">통신판매업신고: 제 2023-전주덕진-0564</a></li>
+        </ul>
       </div>
       <div class="footer-col">
         <h3>문의하기</h3>
         <ul>
-        <li><a href="https://pf.kakao.com/_IseLb/chat">Kakao</a></li>
-        <li><a href="https://www.instagram.com/snsmarketer2022">Instagram</a></li>
-        <li><a href="https://t.me/SNSmarketer">Telegram</a></li>
+        <li><a href="https://pf.kakao.com/_IseLb/chat" target="_blank" >Kakao</a></li>
+        <li><a href="https://www.instagram.com/snsmarketer2022" target="_blank" >Instagram</a></li>
+        <li><a href="https://t.me/SNSmarketer" target="_blank" >Telegram</a></li>
         </ul>
       </div>
     </div>
   </footer>
 
   <div class="chat-widget">
-    <a href="https://t.me/SNSmarketer" class="chat-btn telegram-chat" onclick="return gtag_report_conversion(this.href);">
+    <a href="https://t.me/SNSmarketer" class="chat-btn telegram-chat" target="_blank"  onclick="return gtag_report_conversion(this.href);">
       <img src="img/telegramfooter-icon.png" alt="텔레그램 상담">
       <span>톡상담</span>
     </a>
-    <a href="https://pf.kakao.com/_IseLb/chat" class="chat-btn kakao-chat" onclick="return gtag_report_conversion(this.href);">
+    <a href="https://pf.kakao.com/_IseLb/chat" class="chat-btn kakao-chat" target="_blank"  onclick="return gtag_report_conversion(this.href);">
       <img src="img/kakaofooter-icon.png" alt="카카오 상담">
       <span>톡상담</span>
     </a>
@@ -371,5 +357,17 @@
     }
   });
   </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const btn = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".main-nav");
+
+  btn.addEventListener("click", function() {
+    nav.classList.toggle("open");
+    btn.classList.toggle("active"); 
+  });
+});
+</script>
 </body>
 </html>
