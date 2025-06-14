@@ -25,8 +25,6 @@ header { padding: 20px 0; display: flex; justify-content: space-between; align-i
   outline: none;
 }
 
-
-
 .nav-toggle {
   background: none;
   border: none;
@@ -433,4 +431,18 @@ nav a { color: #333; text-decoration: none; font-weight: 500; }
 }
 @media (max-width: 480px) {
   .platform-list { grid-template-columns: 1fr; }
+}
+
+/* 기본 숨김 상태 */
+.mobile-menu {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* 보여질 때 부드럽게 펼침 */
+.mobile-menu.open {
+  max-height: 500px; /* 충분히 큰 값 */
+  opacity: 1;
 }
