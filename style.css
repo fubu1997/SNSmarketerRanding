@@ -5,6 +5,10 @@ body { font-family: 'Noto Sans KR', sans-serif; color: #333; }
 
 html { scroll-behavior: smooth; }
 
+html, body {
+  overflow-x: hidden; /* ✅ 강제 제한 필요 */
+}
+
 /* 헤더 */
 header { padding: 20px 0; display: flex; justify-content: space-between; align-items: center; }
 .logo-text {

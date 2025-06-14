@@ -104,7 +104,7 @@ function gtag_report_conversion(url) {
     <div class="flex items-center space-x-4">
       <a href="https://pf.kakao.com/_IseLb/chat" class="hidden md:inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"  onclick="return gtag_report_conversion(this.href);">문의하기</a>
       <button class="mobile-menu-button md:hidden">
-        <svg class="w-6 h-6 white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
@@ -157,10 +157,10 @@ function gtag_report_conversion(url) {
   <div class="w-full max-w-[1440px] mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-12">제공서비스 플랫폼</h2>
 
-    <div class="swiper swiper-platforms">
+    <div class="swiper swiper-platforms mx-auto">
       <div class="swiper-wrapper">
         <!-- 인스타그램 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide flex justify-center">
           <div class="w-60 h-60 rounded-2xl bg-gradient-to-br from-pink-500 to-yellow-400 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3">
             <img src="img/instagram-icon.png" class="w-12 h-12 mb-1" />
             <span class="font-bold text-lg">인스타그램</span>
@@ -169,7 +169,7 @@ function gtag_report_conversion(url) {
         </div>
 
         <!-- 유튜브 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide flex justify-center">
           <div class="w-60 h-60 rounded-2xl bg-red-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3">
             <img src="img/youtube-icon.png" class="w-12 h-12 mb-1" />
             <span class="font-bold text-lg">유튜브</span>
@@ -178,7 +178,7 @@ function gtag_report_conversion(url) {
         </div>
 
         <!-- 페이스북 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide flex justify-center">
           <div class="w-60 h-60 rounded-2xl bg-blue-600 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3">
             <img src="img/facebook-icon.png" class="w-12 h-12 mb-1" />
             <span class="font-bold text-lg">페이스북</span>
@@ -187,7 +187,7 @@ function gtag_report_conversion(url) {
         </div>
 
         <!-- 쓰레드 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide flex justify-center">
           <div class="w-60 h-60 rounded-2xl bg-black text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3">
             <img src="img/threads-icon.png" class="w-12 h-12 mb-1" />
             <span class="font-bold text-lg">쓰레드</span>
@@ -196,7 +196,7 @@ function gtag_report_conversion(url) {
         </div>
 
         <!-- 텔레그램 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide flex justify-center">
           <div class="w-60 h-60 rounded-2xl bg-sky-400 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3">
             <img src="img/telegram-icon.png" class="w-12 h-12 mb-1" />
             <span class="font-bold text-lg">텔레그램</span>
@@ -205,7 +205,7 @@ function gtag_report_conversion(url) {
         </div>
 
         <!-- 틱톡 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide flex justify-center">
           <div class="w-60 h-60 rounded-2xl bg-black text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3">
             <img src="img/tiktok-icon.png" class="w-12 h-12 mb-1" />
             <span class="font-bold text-lg">틱톡</span>
@@ -214,7 +214,7 @@ function gtag_report_conversion(url) {
         </div>
 
         <!-- 트위터 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide flex justify-center">
           <div class="w-60 h-60 rounded-2xl bg-sky-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3">
             <img src="img/twitter-icon.png" class="w-12 h-12 mb-1" />
             <span class="font-bold text-lg">트위터</span>
@@ -223,7 +223,7 @@ function gtag_report_conversion(url) {
         </div>
 
         <!-- 사운드클라우드 -->
-        <div class="swiper-slide">
+        <div class="swiper-slide flex justify-center">
           <div class="w-60 h-60 rounded-2xl bg-orange-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3">
             <img src="img/soundcloud-icon.png" class="w-12 h-12 mb-1" />
             <span class="font-bold text-lg">사운드클라우드</span>
@@ -505,25 +505,40 @@ function gtag_report_conversion(url) {
     }
   });
   </script>
-  <script>
-    new Swiper('.swiper-platforms', {
+<script>
+new Swiper('.swiper-platforms', {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  loop: false,
+  centeredSlides: true, // 👈 추가
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      centeredSlides: false,
+      spaceBetween: 20
+    },
+    768: {
       slidesPerView: 3,
+      spaceBetween: 24,
+      centeredSlides: false
+    },
+    1024: {
+      slidesPerView: 4,
       spaceBetween: 32,
-      centeredSlides: false, // false로 설정
-      initialSlide: 0,        // 첫 슬라이드로 시작
-      loop: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        480: { slidesPerView: 2, spaceBetween: 16 },
-        768: { slidesPerView: 3, spaceBetween: 24 },
-        1024: { slidesPerView: 4, spaceBetween: 32 },
-        1280: { slidesPerView: 5, spaceBetween: 32 }
-      }
-    });
-  </script>
+      centeredSlides: false
+    },
+    1280: {
+      slidesPerView: 5,
+      spaceBetween: 40,
+      centeredSlides: false
+    }
+  }
+});
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
