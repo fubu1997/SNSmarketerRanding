@@ -336,10 +336,14 @@ nav a { color: #333; text-decoration: none; font-weight: 500; }
 /* 3열 그리드 (데스크탑) */
 .audience-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr); /* 데스크탑: 3열 */
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .audience-grid {
+    grid-template-columns: 1fr; /* 모바일: 1열 */
+  }
 }
 
 /* 아이템 스타일 */

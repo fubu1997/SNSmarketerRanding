@@ -34,13 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // ✅ Swiper 슬라이더 초기화
-  new Swiper('.swiper-features', {
-    slidesPerView: 1.2,
-    spaceBetween: 16,
-    centeredSlides: false,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+new Swiper('.swiper-features', {
+  slidesPerView: 1.2,
+  spaceBetween: 16,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      centeredSlides: false
     }
-  });
+  }
+});
 });
