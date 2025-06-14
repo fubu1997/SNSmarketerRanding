@@ -17,21 +17,24 @@
     gtag('config', 'AW-10851681691');
   </script>
 
-  <!-- ★ 전환 이벤트 스니펫 (Google Ads Conversion) ★ -->
-  <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-10851681691/hF2ECPjLxtEaEJuLvrYo',
-        'event_callback': callback
-      });
-      return false;
+<!-- Event snippet for 랜딩페이지 문의 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
     }
-  </script>
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-10851681691/T8IfCNPkr9oaEJuLvrYo',
+      'value': 500.0,
+      'currency': 'KRW',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 
   <!-- Site Verification -->
   <meta name="naver-site-verification" content="798e7509ffcce627d5e161858ec0d0c64faadb76" />
@@ -99,7 +102,7 @@
 
     <!-- 고객센터 버튼 + 모바일 햄버거 -->
     <div class="flex items-center space-x-4">
-      <a href="https://pf.kakao.com/_IseLb/chat" class="hidden md:inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">문의하기</a>
+      <a href="https://pf.kakao.com/_IseLb/chat" class="hidden md:inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"  onclick="return gtag_report_conversion(this.href);">문의하기</a>
       <button class="mobile-menu-button md:hidden">
         <svg class="w-6 h-6 white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -131,7 +134,7 @@
       <p class="text-lg text-white mb-8">
         유튜브, 인스타, 트위터 등 SNS 노출마케팅 플랫폼
       </p>
-      <a href="https://pf.kakao.com/_IseLb/chat" target="_blank"
+      <a href="https://pf.kakao.com/_IseLb/chat" target="_blank"  onclick="return gtag_report_conversion(this.href);"
          class="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-md text-lg font-semibold hover:bg-green-700 transition">
         바로 상담하기
         <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-width="2"
@@ -404,7 +407,7 @@
   <section id="cta" class="cta">
     <div class="container">
       <h2>더 궁금하신 점이 있으신가요?</h2>
-      <a href="https://pf.kakao.com/_IseLb/chat" target="_blank" class="btn-cta">서비스 문의하기</a>
+      <a href="https://pf.kakao.com/_IseLb/chat" target="_blank" class="btn-cta"  onclick="return gtag_report_conversion(this.href);">서비스 문의하기</a>
     </div>
   </section>
 
@@ -429,9 +432,9 @@
       <div class="footer-col">
         <h3>문의하기</h3>
         <ul>
-        <li><a href="https://pf.kakao.com/_IseLb/chat" target="_blank" >Kakao</a></li>
+        <li><a href="https://pf.kakao.com/_IseLb/chat" target="_blank"  onclick="return gtag_report_conversion(this.href);" >Kakao</a></li>
         <li><a href="https://www.instagram.com/snsmarketer2022" target="_blank" >Instagram</a></li>
-        <li><a href="https://t.me/SNSmarketer" target="_blank" >Telegram</a></li>
+        <li><a href="https://t.me/SNSmarketer" target="_blank"  onclick="return gtag_report_conversion(this.href);" >Telegram</a></li>
         </ul>
       </div>
     </div>
