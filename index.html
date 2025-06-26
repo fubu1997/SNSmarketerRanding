@@ -427,7 +427,7 @@ function gtag_report_conversion(url) {
   </div>
 </section>
 
-<section id="youtube-solutions2" class="bg-yellow-50 py-16">
+<section id="youtube-solutions2" class="bg-gray-100 py-16">
   <div class="max-w-6xl mx-auto px-4 text-center">
     <!-- 제목 및 설명 -->
     <h2 class="text-4xl font-extrabold text-gray-800 mb-4">
@@ -465,6 +465,10 @@ function gtag_report_conversion(url) {
           <p class="text-gray-700 mb-4">새로 런칭하는 브랜드를 트위터를 통해서 홍보하고 싶어요</p>
         </div>
         <div class="swiper-slide bg-white rounded-lg shadow-md p-4">
+          <img src="https://www.marketersns.kr/img/tiktokconsult01.png" alt="기업진행" class="w-full h-auto rounded-md mb-3" />
+          <p class="text-gray-700 mb-4">틱톡에 적합한 마케팅 컨설팅을 받아보고 싶어요</p>
+        </div>
+        <div class="swiper-slide bg-white rounded-lg shadow-md p-4">
           <img src="https://www.marketersns.kr/img/resell.png" alt="기업진행" class="w-full h-auto rounded-md mb-3" />
           <p class="text-gray-700 mb-4">기업이라 대규모 진행이 필요해요, 가능할까요?</p>
         </div>
@@ -482,39 +486,21 @@ function gtag_report_conversion(url) {
   <!-- 마지막 CTA 섹션 -->
   <section id="cta" class="cta">
     <div class="container">
-      <h2>더 궁금하신 점이 있으신가요?</h2>
+      <h2 class="text-white text-2xl font-bold">더 궁금하신 점이 있으신가요?</h2>
       <a href="https://pf.kakao.com/_IseLb" target="_blank" class="btn-cta"  onclick="return gtag_report_conversion(this.href);">서비스 문의하기</a>
     </div>
   </section>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h3>서비스</h3>
-        <ul>
-          <li><a href="#">개인정보처리방침</a></li>
-          <li><a href="#">서비스 이용약관</a></li>
-          <li><a href="https://pf.kakao.com/_IseLb" target="_blank"  onclick="return gtag_report_conversion(this.href);">서비스 문의하기</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>회사소개</h3>
-        <ul>
-          <li><a href="#">대표자: 이 경 해</a></li>
-          <li><a href="#">사업자번호: 242-06-01925</a></li>
-          <li><a href="#">통신판매업신고: 제 2023-전주덕진-0564</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>문의하기</h3>
-        <ul>
-        <li><a href="https://pf.kakao.com/_IseLb" target="_blank"  onclick="return gtag_report_conversion(this.href);" >Kakao</a></li>
-        <li><a href="https://www.instagram.com/snsmarketer2022" target="_blank" >Instagram</a></li>
-        <li><a href="https://t.me/SNSmarketer" target="_blank"  onclick="return gtag_report_conversion(this.href);" >Telegram</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+
+  <footer class="bg-black text-white text-sm py-16 px-4">
+  <div class="max-w-6xl mx-auto">
+    <p class="mb-2">상호명 : 소셜헬프컴퍼니</p>
+    <p class="mb-2">사업자등록번호 : 242-06-01925</p>
+    <p class="mb-2">대표자 : 이경해</p>
+    <p class="mb-2">통신판매업신고 : 제 2023-전주덕진-0564</p>
+    <p class="mt-6 text-gray-300">Copyright 2022. SNSmarketer All rights reserved</p>
+  </div>
+</footer>
 
   <div class="chat-widget">
     <a href="https://t.me/SNSmarketer" class="chat-btn telegram-chat" target="_blank"  onclick="return gtag_report_conversion(this.href);">
@@ -564,7 +550,13 @@ function gtag_report_conversion(url) {
         slidesPerView: 4,
         spaceBetween: 40,
         centeredSlides: true,
-        initialSlide: 2,
+        initialSlide: 3,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        centeredSlides: true,
+        initialSlide: 3,
       }
     }
   });
@@ -599,7 +591,8 @@ new Swiper('.swiper-platforms', {
     1280: {
       slidesPerView: 5,
       spaceBetween: 40,
-      centeredSlides: false
+      centeredSlides: true,
+      initialSlide: 2,
     }
   }
 });
