@@ -381,7 +381,7 @@ function gtag_report_conversion(url) {
   <div class="max-w-6xl mx-auto px-4 text-center">
     <!-- 제목 및 설명 -->
     <h2 class="text-4xl font-extrabold text-gray-800 mb-4">
-      자체 테스트 기반 결과
+      다양한 후기
     </h2>
     <p class="text-lg text-gray-600 mb-2">
       다양한 키워드 결과를 만나보세요.
@@ -413,14 +413,14 @@ function gtag_report_conversion(url) {
           <img src="https://www.marketersns.kr/img/solution-04.png" alt="각종 라이브 키워드" class="w-full h-auto rounded-md mb-3" />
           <h3 class="text-lg font-semibold text-gray-700">각종 라이브 키워드</h3>
         </div>
-        <div class="swiper-slide bg-white rounded-lg shadow-md p-4">
+        <!-- <div class="swiper-slide bg-white rounded-lg shadow-md p-4">
           <img src="https://www.marketersns.kr/img/001-3.png" alt="각종 라이브 키워드" class="w-full h-auto rounded-md mb-3" />
           <h3 class="text-lg font-semibold text-gray-700">라이브 테스트</h3>
-        </div>
-        <div class="swiper-slide bg-white rounded-lg shadow-md p-4">
+        </div> -->
+        <!-- <div class="swiper-slide bg-white rounded-lg shadow-md p-4">
           <img src="https://www.marketersns.kr/img/001-4.png" alt="각종 라이브 키워드" class="w-full h-auto rounded-md mb-3" />
           <h3 class="text-lg font-semibold text-gray-700">라이브 테스트 결과</h3>
-        </div>
+        </div> -->
         <div class="swiper-slide bg-white rounded-lg shadow-md p-4">
           <img src="https://www.marketersns.kr/img/001-5.png" alt="각종 라이브 키워드" class="w-full h-auto rounded-md mb-3" />
           <h3 class="text-lg font-semibold text-gray-700">라이브 테스트 결과</h3>
@@ -446,7 +446,7 @@ function gtag_report_conversion(url) {
     </p>
 
     <!-- Swiper 슬라이드 -->
-    <div class="swiper-container swiper-youtube">
+    <div class="swiper-container swiper-youtube2">
       <div class="swiper-wrapper">
         <!-- Slide 1 -->
         <div class="swiper-slide bg-white rounded-lg shadow-md p-4">
@@ -523,6 +523,54 @@ function gtag_report_conversion(url) {
 
   <script>
   new Swiper('.swiper-youtube', {
+    // ↓ 모바일 기본: 한 번에 1개, 센터링 끔
+    slidesPerView: 1,
+    centeredSlides: true,
+    initialSlide: 1,
+    loop: false,
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+
+    breakpoints: {
+      // 480px 이상: 2개씩, 가운데 슬라이드(index 1)를 중앙으로
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        centeredSlides: true,
+        initialSlide: 1,
+      },
+      // 768px 이상: 3개씩, 가운데 슬라이드(index 1)를 중앙으로
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: true,
+        initialSlide: 1,
+      },
+      // 1024px 이상: 4개씩, 가운데 두 슬라이드(index 1,2)가 중앙에 위치
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        centeredSlides: true,
+        initialSlide: 2,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        centeredSlides: true,
+        initialSlide: 2,
+      }
+    }
+  });
+  </script>
+  <script>
+  new Swiper('.swiper-youtube2', {
     // ↓ 모바일 기본: 한 번에 1개, 센터링 끔
     slidesPerView: 1,
     centeredSlides: true,
