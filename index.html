@@ -98,22 +98,23 @@ wcs_do();
   <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
     <!-- 로고 -->
     <div class="flex-shrink-0">
-      <a href="http://pf.kakao.com/_IseLb">
+      <a href="/">
         <img src="https://www.marketersns.kr/img/logo.png" alt="SNS마케터 로고" class="h-8 w-auto" style="height: 40px;" >
       </a>
     </div>
 
     <!-- 고객센터 버튼 + 모바일 햄버거 -->
     <div class="flex items-center space-x-4">
-      <div onclick="return gtag_report_conversion(this.href);"
-        id="kakao-talk-channel-chat-button"
-        data-channel-public-id="_IseLb"
-        data-title="consult"
-        data-size="small"
-        data-color="yellow"
-        data-shape="pc"
-        data-support-multiple-densities="true"
-      ></div>
+      <a
+        href="https://pf.kakao.com/_IseLb"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="return gtag_report_conversion(this.href);"
+        class="inline-flex items-center px-4 py-2 rounded-md font-semibold bg-[#FEE500] text-black hover:opacity-90 transition"
+        aria-label="카카오 톡상담 열기">
+        <img scr="img/kakaofooter-icon.png" alt="카카오톡 상담">
+        <span>톡상담</span>
+      </a>
     </div>
   </div>
 
