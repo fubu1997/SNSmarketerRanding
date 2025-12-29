@@ -16,13 +16,17 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
-      window.location = url;
+      window.open(url, '_blank', 'noopener,noreferrer');
     }
   };
   gtag('event', 'conversion', {
       'send_to': 'AW-17276678273/w6KHCNiio9kbEIHhlK5A',
       'event_callback': callback
   });
+
+  // 일부 브라우저에서 callback이 안 타는 경우 대비(전환 전송 대기 최대 1초)
+  setTimeout(callback, 1000);
+
   return false;
 }
 </script>
