@@ -14,19 +14,21 @@
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
+  const callback = function () {
+    if (typeof url !== 'undefined') {
       window.open(url, '_blank', 'noopener,noreferrer');
     }
   };
+
   gtag('event', 'conversion', {
-      'send_to': 'AW-17276678273/w6KHCNiio9kbEIHhlK5A',
-      'event_callback': callback
+    'send_to': 'AW-17276678273/w6KHCNiio9kbEIHhlK5A',
+    'event_callback': callback,
+    'event_timeout': 1000,
+    'transport_type': 'beacon'
   });
 
-  // 일부 브라우저에서 callback이 안 타는 경우 대비(전환 전송 대기 최대 1초)
+  // callback이 안 타는 경우 대비
   setTimeout(callback, 1000);
-
   return false;
 }
 </script>
