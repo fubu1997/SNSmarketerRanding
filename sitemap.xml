@@ -1,42 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
-                          https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-  <!-- 홈페이지 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://marketersns.kr/</loc>
-    <lastmod>2025-05-15</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://www.marketersns.kr/</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- 블로그 -->
   <url>
-    <loc>https://marketersns.kr/blog</loc>
-    <lastmod>2025-05-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- 개인정보처리방침 -->
-  <url>
-    <loc>https://marketersns.kr/privacyPolicy</loc>
-    <lastmod>2025-05-15</lastmod>
+    <loc>https://www.marketersns.kr/service.html</loc>
+    <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
-
-  <!-- 서비스 이용약관 -->
   <url>
-    <loc>https://marketersns.kr/termofservice</loc>
-    <lastmod>2025-05-15</lastmod>
+    <loc>https://www.marketersns.kr/howto.html</loc>
+    <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
-
-  <!-- 카카오 문의하기 (외부 링크이므로 일반적으로 포함 안 함) -->
-  <!-- 추가 페이지가 있으면 여기에 계속 나열 -->
+  <url>
+    <loc>https://www.marketersns.kr/faq.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.marketersns.kr/contact.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

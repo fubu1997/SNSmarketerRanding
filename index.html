@@ -1,484 +1,337 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17276678273"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17276678273');
-  </script>
-
-<!-- Event snippet for 문의 conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  const callback = function () {
-    if (typeof url !== 'undefined') {
-      window.open(url, '_blank', 'noopener,noreferrer');
-    }
-  };
-
-  gtag('event', 'conversion', {
-    'send_to': 'AW-17276678273/w6KHCNiio9kbEIHhlK5A',
-    'event_callback': callback,
-    'event_timeout': 1000,
-    'transport_type': 'beacon'
-  });
-
-  // callback이 안 타는 경우 대비
-  setTimeout(callback, 1000);
-  return false;
-}
-</script>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SNS마케터 - 데이터 기반 마케팅 솔루션 플랫폼</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://marketersns.kr/img/favicon.ico" type="image/png" />
-
-
-<!-- 네이버 스크립트 -->
-<script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script> 
-<script type="text/javascript"> 
-if (!wcs_add) var wcs_add={};
-wcs_add["wa"] = "s_3e013018f9c0";
-if (!_nasa) var _nasa={};
-if(window.wcs){
-wcs.inflow();
-wcs_do();
-}
-</script>
-
-
-
-  <!-- Site Verification -->
-  <meta name="naver-site-verification" content="798e7509ffcce627d5e161858ec0d0c64faadb76" />
-  <meta name="google-site-verification" content="rzXZlbC-KdQQbn_SuHdvt-8CsUY2pBnl90zvshPMKqU" />
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="SNS마케터: 유튜브·인스타그램 통합 운영대행·컨설팅. 채널 최적화, 키워드·콘텐츠 전략, 데이터 분석으로 도달과 참여율 향상을 지원합니다." />
-  <meta name="keywords" content="SNS마케터, SNS 운영대행, 유튜브 인스타그램 컨설팅, 키워드 전략, 데이터 분석, 참여율 개선" />
-  <meta name="author" content="SNS마케터" />
-
-  <!-- Open Graph / Facebook -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SNS마케터 | SNS 마케팅 서비스 안내 랜딩</title>
+  <meta name="description" content="SNS마케터 광고 전용 안내 페이지입니다. 유튜브·인스타·틱톡 등 SNS 채널 운영에 필요한 서비스 범위, 진행 방식, 주의사항을 확인하고 메인 사이트에서 가입·주문을 진행하세요." />
+  <!-- ===== SEO / Social ===== -->
+  <link rel="canonical" href="https://www.marketersns.kr/" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b0b12" />
+  <link rel="icon" href="img/favicon.ico" />
+  <meta property="og:site_name" content="SNS마케터" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://marketersns.kr/" />
-  <meta property="og:title" content="SNS마케터 - 유튜브, 인스타그램 통합 마케팅 솔루션" />
-  <meta property="og:description" content="채널 최적화·키워드·콘텐츠 전략까지 데이터 기반으로 지원합니다. 운영대행·컨설팅 중심 서비스입니다." />
-  <meta property="og:image" content="https://marketersns.kr/img/og-image2.png" />
-
-  <!-- Twitter Card -->
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:url" content="https://www.marketersns.kr/" />
+  <meta property="og:title" content="SNS마케터 | SNS 마케팅 서비스 안내 랜딩" />
+  <meta property="og:description" content="SNS마케터 광고 전용 안내 페이지입니다. 유튜브·인스타·틱톡 등 SNS 채널 운영에 필요한 서비스 범위, 진행 방식, 주의사항을 확인하고 메인 사이트에서 가입·주문을 진행하세요." />
+  <meta property="og:image" content="https://www.marketersns.kr/img/heroImg.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://marketersns.kr/" />
-  <meta name="twitter:title" content="SNS마케터 - 통합 마케팅 솔루션" />
-  <meta name="twitter:description" content="유튜브·인스타 운영대행·컨설팅, 데이터 분석 기반의 도달·참여율 개선 지원." />
-  <meta name="twitter:image" content="https://marketersns.kr/img/og-image2.png" />
+  <meta name="twitter:title" content="SNS마케터 | SNS 마케팅 서비스 안내 랜딩" />
+  <meta name="twitter:description" content="SNS마케터 광고 전용 안내 페이지입니다. 유튜브·인스타·틱톡 등 SNS 채널 운영에 필요한 서비스 범위, 진행 방식, 주의사항을 확인하고 메인 사이트에서 가입·주문을 진행하세요." />
+  <meta name="twitter:image" content="https://www.marketersns.kr/img/heroImg.png" />
+  <link rel="preload" as="image" href="https://www.marketersns.kr/img/heroImg.png" />
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"SNS마케터","url":"https://www.marketersns.kr/","logo":"https://www.marketersns.kr/img/logo.png"},{"@context":"https://schema.org","@type":"LocalBusiness","name":"소셜헬프컴퍼니","url":"https://www.marketersns.kr/","telephone":"+82-63-246-6118"},{"@context":"https://schema.org","@type":"WebSite","name":"SNS마케터","url":"https://www.marketersns.kr/","potentialAction":{"@type":"SearchAction","target":"https://www.marketersns.kr/?q={search_term_string}","query-input":"required name=search_term_string"}}]</script>
 
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "SNS마케터",
-    "url": "https://marketersns.kr/",
-    "logo": "https://www.marketersns.kr/img/logo.png",
-    "sameAs": [
-      "https://www.instagram.com/snsmarketer2022",
-      "https://t.me/SNSmarketer",
-      "https://pf.kakao.com/_IseLb"
-    ]
-  }
-  </script>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <!-- ✅ 나중에 GTM HEAD 여기에 넣기 -->
 </head>
 <body>
-<!-- navbar goes here -->
-<nav class="bg-black shadow-md fixed top-0 left-0 w-full z-50">
-  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
-    <!-- 로고 -->
-    <div class="flex-shrink-0">
-      <a href="/">
-        <img src="https://www.marketersns.kr/img/logo.png" alt="SNS마케터 로고" class="h-8 w-auto" style="height: 40px;" >
-      </a>
-    </div>
+  <!-- ✅ 나중에 GTM BODY(noscript) 여기에 넣기 -->
 
-    <!-- 고객센터 버튼 + 모바일 햄버거 -->
-    <div class="flex items-center space-x-4">
-      <a
-        href="https://pf.kakao.com/_IseLb"
-        target="_blank"
-        rel="noopener noreferrer"
-        onclick="return gtag_report_conversion(this.href);"
-        class="inline-flex items-center px-4 py-2 rounded-md font-semibold bg-[#FEE500] text-black hover:opacity-90 transition"
-        aria-label="톡상담">
-        <img src="img/kakaofooter-icon.png" alt="카카오톡 상담" class="w-5 h-5 mr-2 shrink-0 object-contain inline-block"  />
-        <span class="leading-none">1:1 상담</span>
-      </a>
-    </div>
+<!-- ===== 헤더 ===== -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="img/logo.png" alt="SNS마케터" />
+    </a>
+
+    <!-- 모바일 햄버거 -->
+    <button class="hamburger" id="hamburger" type="button" aria-label="메뉴 열기" aria-controls="gnb" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="gnb" id="gnb" aria-label="주요 메뉴">
+      <a class="gnb-link active" href="index.html">홈</a>
+      <a class="gnb-link" href="service.html">서비스</a>
+      <a class="gnb-link" href="howto.html">이용방법</a>
+      <a class="gnb-link" href="faq.html">FAQ</a>
+      <a class="gnb-link" href="contact.html">문의</a>
+    </nav>
   </div>
 
-</nav>
+  <!-- 모바일 오버레이(선택인데 강추) -->
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+</header>
 
-  <section id="hero" class="relative bg-black text-white pt-32 pb-20 px-6 sm:px-8 md:px-12 lg:px-20 xl:px-28">
-  <div class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
-    <!-- 텍스트 블록 -->
-    <div class="w-full lg:w-1/2 text-center lg:text-left">
-      <h1 class="text-4xl lg:text-5xl font-bold leading-relaxed mb-4">
-        <mark class="bg-yellow-400 text-black px-2">데이터 기반 SNS 마케팅</mark>
-      </h1>
-      <h2 class="text-4xl lg:text-5xl font-bold leading-relaxed mb-4">
-        SNS마케터와 함께하세요!
-      </h2>
-      <p class="text-lg text-white mb-8">
-        인스타·유튜브·페이스북 운영대행·컨설팅
-      </p>
-      <a href="https://pf.kakao.com/_IseLb" target="_blank" rel="noopener noreferrer"  onclick="return gtag_report_conversion(this.href);"
-         class="inline-flex items-center px-6 py-3 bg-[#FEE500] text-black rounded-md text-lg font-semibold transition">
-        SNS마케터 이용하기
-        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-        </svg>
-      </a>
-    </div>
 
-    <!-- 이미지 블록 -->
-    <div class="w-full lg:w-1/2">
-      <img src="https://www.marketersns.kr/img/heroImg.png"
-           alt="SNS 마케팅 비주얼" class="w-[90%] max-w-xs sm:max-w-sm mx-auto lg:mx-0" />
-    </div>
-  </div>
-  </section>
+  <!-- ===== 히어로 ===== -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
 
-<section id="platforms" class="bg-white py-16 overflow-hidden">
-  <div class="w-full max-w-[1440px] mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-2">다양한 마케팅플랫폼</h2>
-    <p class="text-sm text-gray-500 text-center italic mb-8">
-      SNS마케터가 여러분과 함께합니다
-    </p>
+    <div class="container hero-inner">
+      <!-- 좌측 카피 -->
+      <div class="hero-left">
+        <div class="hero-eyebrow">SNS MARKETING SOLUTION</div>
+        <h1 class="hero-title">
+          <span class="hero-accent">SNS 채널</span><br/>
+          효율적 관리 솔루션
+        </h1>
 
-    <div class="swiper swiper-platforms mx-auto">
-      <div class="swiper-wrapper">
-        <!-- 인스타그램 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(253, 159, 40);">
-            <img src="https://www.marketersns.kr/img/instagram02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
+        <ul class="hero-points">
+          <li>
+            <span class="ico red">▶</span>
+            유튜브 채널 기획관리 & 유튜브 라이브 관리
+          </li>
+          <li>
+            <span class="ico pink">▶</span>
+            인스타그램 기획관리
+          </li>
+          <li>
+            <span class="ico green">▶</span>
+            매출향상 블로그 체험단
+          </li>
+        </ul>
+
+        <div class="hero-actions">
+          <!-- 메인사이트 이동: gclid 이어붙이기(main.js에서 처리) -->
+          <a class="btn primary" data-go-main="https://marketersns.com/" href="https://marketersns.com/">
+            메인 사이트 구경하기
+          </a>
+          <a class="btn ghost" href="service.html">서비스 보기</a>
         </div>
 
-        <!-- 유튜브 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-black text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3">
-            <img src="https://www.marketersns.kr/img/youtube02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-        <!-- 페이스북 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-blue-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(24, 168, 241);">
-            <img src="https://www.marketersns.kr/img/facebook02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-        <!-- 쓰레드 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-red-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(252, 82, 48)">
-            <img src="https://www.marketersns.kr/img/threads02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-        <!-- 텔레그램 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-sky-400 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(58, 76, 168)">
-            <img src="https://www.marketersns.kr/img/telegram02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-        <!-- 틱톡 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-black text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: black">
-            <img src="https://www.marketersns.kr/img/tiktok02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-        <!-- 트위터 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-sky-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(86, 138, 53)">
-            <img src="https://www.marketersns.kr/img/twitter02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-        <!-- 사운드클라우드 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-orange-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(253, 159, 40)">
-            <img src="https://www.marketersns.kr/img/soundcloud02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-        <!-- 트위치 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-purple-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(17, 135, 207)">
-            <img src="https://www.marketersns.kr/img/twich02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-        <!-- 디스코드 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-blue-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(58, 76, 168)">
-            <img src="https://www.marketersns.kr/img/discord02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-         <!-- 스포티파이 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-gray-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(89, 89, 89)">
-            <img src="https://www.marketersns.kr/img/spotify02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-          <!-- 네이버 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-yellow-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(253, 159, 40)">
-            <img src="https://www.marketersns.kr/img/naver02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
-        </div>
-
-          <!-- 웹사이트 -->
-        <div class="swiper-slide flex justify-center">
-          <div class="w-60 h-60 rounded-2xl bg-orange-500 text-white flex flex-col justify-center items-center text-center px-4 py-5 shadow-xl space-y-3" style="background-color: rgb(253, 111, 34)">
-            <img src="https://www.marketersns.kr/img/web02.png" class="w-full h-full object-cover rounded-2xl" />
-          </div>
+        <div class="hero-note">
+          안내: 실제 가입/주문은 메인 사이트에서 진행됩니다.
         </div>
       </div>
 
-      <!-- Pagination -->
-      <div class="swiper-pagination mt-6"></div>
-      <!-- 👇 안내 문구 추가 -->
-      <div class="text-center mt-6">
-        <p class="text-sm text-gray-500">← 옆으로 넘겨서 서비스 보기 →</p>
+      <!-- 우측 비주얼 -->
+      <div class="hero-right">
+        <div class="device-wrap">
+          <img src="https://www.marketersns.kr/img/heroImg.png" alt="대시보드 미리보기" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 다양한 마케팅플랫폼 섹션 ====== -->
+<section class="platforms">
+  <div class="container">
+    <div class="platforms-head">
+      <h2 class="platforms-title">다양한 마케팅플랫폼</h2>
+      <p class="platforms-sub">SNS마케터가 여러분과 함께합니다</p>
+    </div>
+
+    <div class="platforms-row">
+      <button class="p-nav p-prev" type="button" aria-label="왼쪽으로">‹</button>
+
+      <div class="platforms-track" id="platformTrack">
+        <!-- 1줄: 인스타/유튜브/페북/스레드/텔레그램 -->
+        <a class="p-card" href="service.html#instagram" aria-label="인스타그램">
+          <div class="p-icon"><img src="img/instagram-icon.png" alt="Instagram" /></div>
+        </a>
+
+        <a class="p-card" href="service.html#youtube" aria-label="유튜브">
+          <div class="p-icon"><img src="img/youtube-icon.png" alt="YouTube" /></div>
+        </a>
+
+        <a class="p-card" href="service.html#facebook" aria-label="페이스북">
+          <div class="p-icon"><img src="img/facebook-icon.png" alt="Facebook" /></div>
+        </a>
+
+        <a class="p-card" href="service.html#threads" aria-label="스레드">
+          <div class="p-icon"><img src="img/threads-icon.png" alt="Threads" /></div>
+        </a>
+
+        <a class="p-card" href="service.html#telegram" aria-label="텔레그램">
+          <div class="p-icon"><img src="img/telegram-icon.png" alt="Telegram" /></div>
+        </a>
+
+        <!-- 2줄: 틱톡/트위터/사운드클라우드/트위치/디스코드 -->
+        <a class="p-card" href="service.html#tiktok" aria-label="틱톡">
+          <div class="p-icon"><img src="img/tiktok-icon.png" alt="TikTok" /></div>
+        </a>
+
+        <a class="p-card" href="service.html#twitter" aria-label="트위터">
+          <div class="p-icon"><img src="img/twitter-icon.png" alt="Twitter" /></div>
+        </a>
+
+        <a class="p-card" href="service.html#soundcloud" aria-label="사운드클라우드">
+          <div class="p-icon"><img src="img/soundcloud-icon.png" alt="SoundCloud" /></div>
+        </a>
+
+        <a class="p-card" href="service.html#twitch" aria-label="트위치">
+          <div class="p-icon"><img src="img/twitch-icon.png" alt="Twitch" /></div>
+        </a>
+
+        <a class="p-card" href="service.html#discord" aria-label="디스코드">
+          <div class="p-icon"><img src="img/discord-icon.png" alt="Discord" /></div>
+        </a>
+
+        <!-- 3줄: 스포티파이/네이버/웹(글로벌) -->
+        <a class="p-card" href="service.html#spotify" aria-label="스포티파이">
+          <div class="p-icon"><img src="img/spotify-icon.png" alt="Spotify" /></div>
+        </a>
+
+        <a class="p-card" href="service.html#naver" aria-label="네이버">
+          <div class="p-icon"><img src="img/naver-icon.png" alt="Naver" /></div>
+        </a>
+
+        <a class="p-card" href="service.html#global" aria-label="글로벌/웹">
+          <div class="p-icon"><img src="img/global-icon.png" alt="Global" /></div>
+        </a>
+      </div>
+
+
+      <button class="p-nav p-next" type="button" aria-label="오른쪽으로">›</button>
+    </div>
+
+    <div class="platforms-hint">← 옆으로 넘겨서 서비스 보기 →</div>
+  </div>
+</section>
+
+<!-- ====== SNS 효과 섹션 (보라색 4포인트) ====== -->
+<section class="sns-effect">
+  <div class="container">
+    <h2 class="sns-effect-title">SNS 효과를 경험해보세요!</h2>
+
+    <div class="sns-effect-grid">
+      <div class="sns-effect-item">
+        <div class="sns-effect-ico">
+          <img src="https://www.marketersns.kr/img/feature-account.png" alt="최적화 관리" />
+        </div>
+        <div class="sns-effect-name">최적화 관리</div>
+        <div class="sns-effect-desc">
+          참여율, 피드백, 재방문 유도까지
+          유저의 반응을 이끌어내는 방법, 우리가 알려줄게요
+        </div>
+      </div>
+
+      <div class="sns-effect-item">
+        <div class="sns-effect-ico">
+          <img src="https://www.marketersns.kr/img/feature-engagement.png" alt="키워드 관리" />
+        </div>
+        <div class="sns-effect-name">키워드 관리</div>
+        <div class="sns-effect-desc">
+          부동산·주식 등 키워드에 적합한
+          최적화 전략을 지원해요
+        </div>
+      </div>
+
+      <div class="sns-effect-item">
+        <div class="sns-effect-ico">
+          <img src="https://www.marketersns.kr/img/feature-consulting.png" alt="연중무휴 상담 지원" />
+        </div>
+        <div class="sns-effect-name">연중무휴 상담 지원</div>
+        <div class="sns-effect-desc">
+          연중무휴, 필요한 시간에 맞춰
+          상담 지원을 해드려요
+        </div>
+      </div>
+
+      <div class="sns-effect-item">
+        <div class="sns-effect-ico">
+          <img src="https://www.marketersns.kr/img/feature-reporting.png" alt="월간 분석 리포트" />
+        </div>
+        <div class="sns-effect-name">월간 분석 리포트</div>
+        <div class="sns-effect-desc">
+          성과 데이터를 주간·월간 단위로 제공하여,
+          지속적인 전략 점검과 개선을 도와드려요
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ✅ features 섹션 -->
-<section id="features" class="bg-[#765CFF] py-20 text-white overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">SNS 효과를 경험해보세요!</h2>
+<!-- ====== CTA 섹션 ====== -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-left">
+        <div class="cta-badge">START NOW</div>
+        <h2 class="cta-title">
+          지금 바로 <span class="cta-accent">SNS마케터</span>로<br/>
+          채널 성장 흐름을 만들어보세요.
+        </h2>
+        <p class="cta-desc">
+          실제 가입/주문은 메인 사이트에서 진행됩니다.
+          필요한 경우 카톡으로 빠르게 상담도 가능합니다.
+        </p>
 
-    <!-- ✅ 모바일: swiper 슬라이드 -->
-    <div class="swiper-container swiper-features md:hidden px-0 overflow-hidden">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide w-full max-w-full text-center space-y-6 px-4">
-          <div class="mx-auto w-24 h-24 rounded-full bg-white flex items-center justify-center">
-            <img src="https://www.marketersns.kr/img/feature-account.png" alt="계정 최적화 관리" class="w-12 h-12" />
-          </div>
-          <h3 class="text-lg font-bold">최적화 관리</h3>
-          <p class="text-base">참여율, 피드백, 재방문 유도까지 유저의 반응을 이끌어내는 비밀, 우리가 알려줄게요</p>
+        <div class="cta-actions">
+          <a class="btn primary" data-go-main="https://marketersns.com/" href="https://marketersns.com/">
+            홈페이지/가격 보기
+          </a>
+          <a class="btn ghost" href="https://pf.kakao.com/_IseLb" target="_blank" rel="noopener">
+            카카오톡 문의하기
+          </a>
         </div>
-        <!-- Slide 2 -->
-        <div class="swiper-slide w-full max-w-full text-center space-y-6 px-4">
-          <div class="mx-auto w-24 h-24 rounded-full bg-white flex items-center justify-center">
-            <img src="https://www.marketersns.kr/img/feature-engagement.png" alt="키워드 노출 관리" class="w-12 h-12" />
-          </div>
-          <h3 class="text-lg font-bold">키워드 관리</h3>
-          <p class="text-base">부동산·주식 등 키워드에 적합한 최적화 전략을 지원해요</p>
-        </div>
-        <!-- Slide 3 -->
-        <div class="swiper-slide w-full max-w-full text-center space-y-6 px-4">
-          <div class="mx-auto w-24 h-24 rounded-full bg-white flex items-center justify-center">
-            <img src="https://www.marketersns.kr/img/feature-consulting.png" alt="24시간 상담 지원" class="w-12 h-12" />
-          </div>
-          <h3 class="text-lg font-bold">연중무휴 상담 지원</h3>
-          <p class="text-base">연중무휴, 필요한 시간에 맞춰 상담 지원을 해드려요</p>
-        </div>
-        <!-- Slide 4 -->
-        <div class="swiper-slide w-full max-w-full text-center space-y-6 px-4">
-          <div class="mx-auto w-24 h-24 rounded-full bg-white flex items-center justify-center">
-            <img src="https://www.marketersns.kr/img/feature-reporting.png" alt="월간 분석 리포트" class="w-12 h-12" />
-          </div>
-          <h3 class="text-lg font-bold">월간 분석 리포트</h3>
-          <p class="text-base">성과 데이터를 주간·월간 단위로 제공하여, 지속적인 전략 점검과 개선해드려요</p>
-        </div>
-      </div>
-      <div class="swiper-pagination mt-6"></div>
-    </div>
 
-    <!-- ✅ 데스크탑: 한 줄 layout -->
-    <div class="hidden md:flex justify-center gap-12 text-center">
-      <!-- Item 1 -->
-      <div class="w-64 space-y-6">
-        <div class="mx-auto w-24 h-24 rounded-full bg-white flex items-center justify-center">
-          <img src="https://www.marketersns.kr/img/feature-account.png" alt="계정 최적화 관리" class="w-12 h-12" />
+        <div class="cta-mini">
+          평균 응답이 빠른 편이에요 · 링크/아이디를 같이 보내면 더 정확해요
         </div>
-        <h3 class="text-lg font-bold">최적화 관리</h3>
-        <p class="text-base leading-snug">참여율, 피드백, 재방문 유도까지 유저의 반응을 이끌어내는 비밀, 우리가 알려줄게요</p>
       </div>
-      <!-- Item 2 -->
-      <div class="w-64 space-y-6">
-        <div class="mx-auto w-24 h-24 rounded-full bg-white flex items-center justify-center">
-          <img src="https://www.marketersns.kr/img/feature-engagement.png" alt="키워드 알고리즘 관리" class="w-12 h-12" />
+
+      <div class="cta-right" aria-hidden="true">
+        <div class="cta-stat">
+          <div class="cta-stat-num">01</div>
+          <div class="cta-stat-txt">플랫폼 선택</div>
         </div>
-        <h3 class="text-lg font-bold">키워드 관리</h3>
-        <p class="text-base leading-snug">부동산·주식 등 키워드에 적합한 최적화 전략을 지원해요</p>
-      </div>
-      <!-- Item 3 -->
-      <div class="w-64 space-y-6">
-        <div class="mx-auto w-24 h-24 rounded-full bg-white flex items-center justify-center">
-          <img src="https://www.marketersns.kr/img/feature-consulting.png" alt="24시간 상담 지원" class="w-12 h-12" />
+        <div class="cta-stat">
+          <div class="cta-stat-num">02</div>
+          <div class="cta-stat-txt">목표 설정</div>
         </div>
-        <h3 class="text-lg font-bold">연중무휴 상담 지원</h3>
-        <p class="text-base leading-snug">연중무휴, 필요한 시간에 맞춰 상담 지원을 해드려요</p>
-      </div>
-      <!-- Item 4 -->
-      <div class="w-64 space-y-6">
-        <div class="mx-auto w-24 h-24 rounded-full bg-white flex items-center justify-center">
-          <img src="https://www.marketersns.kr/img/feature-reporting.png" alt="월간 분석 리포트" class="w-12 h-12" />
+        <div class="cta-stat">
+          <div class="cta-stat-num">03</div>
+          <div class="cta-stat-txt">주문 진행</div>
         </div>
-        <h3 class="text-lg font-bold">월간 분석 리포트</h3>
-        <p class="text-base leading-snug">성과 데이터를 주간·월간 단위로 제공하여, 지속적인 전략 점검과 개선해드려요</p>
       </div>
     </div>
   </div>
 </section>
 
-  <!-- services 섹션 다음에 바로 추가 -->
-  <section id="audience" class="audience">
-    <div class="container">
-      <h2>
-        SNS마케터가 함께합니다.
-      </h2>
 
-      <div class="audience-grid">
-        <div class="audience-item">
-          <p><span>SNS 홍보</span>에 도움이 필요하신 분</p>
-        </div>
-        <div class="audience-item">
-          <p><span>콘텐츠 컨설팅</span> 및 업로드 관련 조업</p>
-        </div>
-        <div class="audience-item">
-          <p><span>유튜브 인기영상</span> 만들고 싶은 분들</p>
-        </div>
-        <div class="audience-item">
-          <p><span>알고리즘 분석</span>를 원하시는 유튜버</p>
-        </div>
-        <div class="audience-item">
-          <p><span>라이브 방송 등</span> 최적화 고민이신 분</p>
-        </div>
-        <div class="audience-item">
-          <p><span>키워드 검색</span> 전략을 원하시는 분</p>
-        </div>
-      </div>
+<!-- ====== Footer ====== -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <div>상호명 : 소셜헬프컴퍼니</div>
+      <div>사업자등록번호 : 242-06-01925</div>
+      <div>대표자 : 이경해</div>
+      <div>통신판매업신고 : 제 2023-전주덕진-0564</div>
+      <div>TEL : 063-246-6118</div>
     </div>
-  </section>
 
-  <!-- 마지막 CTA 섹션 -->
-  <section id="cta" class="cta">
-    <div class="container">
-      <h2 class="text-white text-2xl font-bold">더 궁금하신 점이 있으신가요?</h2>
-      <a href="https://pf.kakao.com/_IseLb" target="_blank" rel="noopener noreferrer" class="btn-cta"  onclick="return gtag_report_conversion(this.href);">서비스 문의하기</a>
+    <div class="footer-copy">
+      Copyright 2022. SNSmarketer All rights reserved
     </div>
-  </section>
-
-
-  <footer class="bg-black text-white text-sm py-16 px-4">
-  <div class="max-w-6xl mx-auto">
-    <p class="mb-2">상호명 : 소셜헬프컴퍼니</p>
-    <p class="mb-2">사업자등록번호 : 242-06-01925</p>
-    <p class="mb-2">대표자 : 이경해</p>
-    <p class="mb-2">통신판매업신고 : 제 2023-전주덕진-0564</p>
-    <p class="mt-6 text-gray-300">Copyright 2022. SNSmarketer All rights reserved</p>
   </div>
 </footer>
 
-  <div class="chat-widget">
-    <a href="https://t.me/SNSmarketer" class="chat-btn telegram-chat" target="_blank" rel="noopener noreferrer"  onclick="return gtag_report_conversion(this.href);">
-      <img src="img/telegramfooter-icon.png" alt="텔레그램 상담">
-      <span>톡상담</span>
-    </a>
-    <a href="https://pf.kakao.com/_IseLb" class="chat-btn kakao-chat" target="_blank" rel="noopener noreferrer"  onclick="return gtag_report_conversion(this.href);">
-      <img src="img/kakaofooter-icon.png" alt="카카오 상담">
-      <span>톡상담</span>
-    </a>
-  </div>
+<!-- ====== Floating Talk Buttons (SVG 버전) ====== -->
+<div class="floating-talk">
+  <!-- Telegram -->
+  <a href="https://t.me/SNSmarketer" target="_blank" rel="noopener"
+     class="talk-btn telegram" aria-label="텔레그램 톡상담">
+    <!-- Telegram SVG -->
+    <svg class="talk-ico" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M9.47 15.37 9.1 20.57c.53 0 .76-.23 1.04-.5l2.5-2.4 5.18 3.79c.95.52 1.63.25 1.87-.88l3.38-15.9c.33-1.5-.54-2.1-1.46-1.77L1.64 9.62c-1.45.56-1.43 1.35-.25 1.71l5.23 1.63L18.8 5.24c.57-.38 1.1-.17.67.21"/>
+      <path d="M18.8 5.45 7.9 13.64c-.38.29-.36.58-.07.86l1.64 1.5 8.88-10.03"/>
+    </svg>
+  </a>
+
+  <!-- Kakao -->
+  <a href="https://pf.kakao.com/_IseLb" target="_blank" rel="noopener"
+     class="talk-btn kakao" aria-label="카카오톡 톡상담">
+    <!-- KakaoTalk SVG -->
+    <svg class="talk-ico" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3C6.48 3 2 6.41 2 10.62c0 2.66 1.78 5 4.45 6.39l-.94 3.45c-.09.33.28.6.57.42l4.06-2.57c.61.08 1.23.12 1.86.12 5.52 0 10-3.41 10-7.62S17.52 3 12 3Z"/>
+      <path d="M7.7 10.8c0-.44.36-.8.8-.8h7c.44 0 .8.36.8.8s-.36.8-.8.8h-7c-.44 0-.8-.36-.8-.8Z" fill="#000"/>
+      <path d="M7.7 13.5c0-.44.36-.8.8-.8h4.6c.44 0 .8.36.8.8s-.36.8-.8.8H8.5c-.44 0-.8-.36-.8-.8Z" fill="#000"/>
+    </svg>
+  </a>
+</div>
 
 
-<script>
-new Swiper('.swiper-platforms', {
-  slidesPerView: 1,
-  initialSlide: 1,
-  spaceBetween: 16,
-  loop: false,
-  centeredSlides: true, // 👈 추가
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      centeredSlides: false,
-      spaceBetween: 20
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 24,
-      centeredSlides: false
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 32,
-      centeredSlides: false
-    },
-    1280: {
-      slidesPerView: 5,
-      spaceBetween: 40,
-      centeredSlides: true,
-      initialSlide: 2,
-    }
-  }
-});
-</script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const btn = document.querySelector(".nav-toggle");
-  const nav = document.querySelector(".main-nav");
 
-  btn.addEventListener("click", function() {
-    nav.classList.toggle("open");
-    btn.classList.toggle("active"); 
-  });
-});
-</script>
-<script src="main.js"></script>
-<!-- 카카오톡 상담버튼 스크립트 -->
- <script>
-  window.kakaoAsyncInit = function() {
-    Kakao.Channel.createChatButton({
-      container: '#kakao-talk-channel-chat-button',
-    });
-  };
-
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.channel.min.js';
-    js.integrity = 'sha384-8oNFBbAHWVovcMLgR+mLbxqwoucixezSAzniBcjnEoumhfIbMIg4DrVsoiPEtlnt';
-    js.crossOrigin = 'anonymous';
-    fjs.parentNode.insertBefore(js, fjs);
-  })(document, 'script', 'kakao-js-sdk');
-</script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="main.js"></script>
 </body>
 </html>

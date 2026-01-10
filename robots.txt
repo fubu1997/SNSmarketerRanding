@@ -1,6 +1,5 @@
-# robots.txt for https://marketersns.kr
-
+# robots.txt for https://www.marketersns.kr/
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://marketersns.kr/sitemap.xml
+Sitemap: https://www.marketersns.kr/sitemap.xml
