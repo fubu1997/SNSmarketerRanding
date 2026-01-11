@@ -52,6 +52,7 @@
     btn.classList.add("is-open");
     gnb.classList.add("is-open");
     overlay && overlay.classList.add("is-open");
+    document.body.classList.add("menu-lock");
     btn.setAttribute("aria-expanded", "true");
   }
 
@@ -59,6 +60,7 @@
     btn.classList.remove("is-open");
     gnb.classList.remove("is-open");
     overlay && overlay.classList.remove("is-open");
+    document.body.classList.remove("menu-lock");
     btn.setAttribute("aria-expanded", "false");
   }
 
