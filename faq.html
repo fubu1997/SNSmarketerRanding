@@ -26,14 +26,17 @@
 
   <link rel="stylesheet" href="style.css" />
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17276678273">
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17276678273"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'AW-17276678273');
+    gtag('config', 'AW-17276678273', {
+      'linker': {
+        'domains': ['marketersns.kr', 'marketersns.com']
+      }
+    });
   </script>
   <style>
     /* 이 페이지 전용 간단 FAQ 박스 */
