@@ -1,29 +1,3 @@
-(function(){
-  // 랜딩 -> 메인 이동 링크에 현재 쿼리스트링(gclid 등) 보존
-  document.querySelectorAll("[data-go-main]").forEach(el => {
-    el.addEventListener("click", (e) => {
-      const base = el.getAttribute("data-go-main");
-      if (!base) return;
-
-      const qs = location.search || "";
-      const target = base.includes("?")
-        ? (base + "&" + qs.replace(/^\?/, ""))
-        : (base + qs);
-
-      // a태그면 href 갱신 후 그대로 진행
-      if (el.tagName.toLowerCase() === "a") {
-        el.setAttribute("href", target);
-        return;
-      }
-
-      // 버튼이면 강제 이동
-      e.preventDefault();
-      location.href = target;
-    }, { capture:true });
-  });
-})();
-
-
 // ====== platforms 슬라이더 버튼 제어 ======
 (function(){
   const track = document.getElementById("platformTrack");
