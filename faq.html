@@ -25,14 +25,6 @@
   <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"SNS마케터","url":"https://www.marketersns.kr/","logo":"https://www.marketersns.kr/img/logo.png"},{"@context":"https://schema.org","@type":"LocalBusiness","name":"소셜헬프컴퍼니","url":"https://www.marketersns.kr/","telephone":"+82-63-246-6118"},{"@context":"https://schema.org","@type":"WebSite","name":"SNS마케터","url":"https://www.marketersns.kr/","potentialAction":{"@type":"SearchAction","target":"https://www.marketersns.kr/?q={search_term_string}","query-input":"required name=search_term_string"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://www.marketersns.kr/"},{"@type":"ListItem","position":2,"name":"FAQ","item":"https://www.marketersns.kr/faq.html"}]}]</script>
 
   <link rel="stylesheet" href="style.css" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17276678273"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17276678273');
-  </script>
   <style>
     /* 이 페이지 전용 간단 FAQ 박스 */
     .faq-wrap{ max-width:920px; margin:0 auto; }
@@ -163,22 +155,32 @@
       <div class="cta-left">
         <div class="cta-badge">START NOW</div>
         <h2 class="cta-title">
-          지금 바로 <span class="cta-accent">SNS마케터</span>와<br/>
+          지금 바로 <span class="cta-accent">SNS마케터</span>로<br/>
           채널 운영 방향을 함께 설계해보세요
         </h2>
         <p class="cta-desc">
           운영 목적과 예산에 맞춰 진행 방법을 안내합니다.
           카카오톡으로 링크/아이디를 보내주시면 더 빠릅니다.
         </p>
-
         <div class="cta-actions">
-          <a class="btn primary" href="https://pf.kakao.com/_IseLb" target="_blank" rel="noopener">
-            카카오톡 문의하기
+          <!-- 카카오 -->
+          <a class="btn kakao" href="https://pf.kakao.com/_IseLb" target="_blank" rel="noopener">
+            <svg class="hero-ico" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3C6.48 3 2 6.41 2 10.62c0 2.66 1.78 5 4.45 6.39l-.94 3.45c-.09.33.28.6.57.42l4.06-2.57c.61.08 1.23.12 1.86.12 5.52 0 10-3.41 10-7.62S17.52 3 12 3Z"/>
+              <path d="M7.7 10.8c0-.44.36-.8.8-.8h7c.44 0 .8.36.8.8s-.36.8-.8.8h-7c-.44 0-.8-.36-.8-.8Z" fill="#000"/>
+              <path d="M7.7 13.5c0-.44.36-.8.8-.8h4.6c.44 0 .8.36.8.8s-.36.8-.8.8H8.5c-.44 0-.8-.36-.8-.8Z" fill="#000"/>
+            </svg>
+            카카오톡 문의
           </a>
-          <a class="btn ghost" href="contact.html">자주 묻는 질문</a>
+          <!-- 텔레그램 -->
+          <a class="btn telegram" href="https://t.me/SNSmarketer" target="_blank" rel="noopener">
+            <svg class="hero-ico" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9.47 15.37 9.1 20.57c.53 0 .76-.23 1.04-.5l2.5-2.4 5.18 3.79c.95.52 1.63.25 1.87-.88l3.38-15.9c.33-1.5-.54-2.1-1.46-1.77L1.64 9.62c-1.45.56-1.43 1.35-.25 1.71l5.23 1.63L18.8 5.24c.57-.38 1.1-.17.67.21"/>
+              <path d="M18.8 5.45 7.9 13.64c-.38.29-.36.58-.07.86l1.64 1.5 8.88-10.03"/>
+            </svg>
+            텔레그램 문의
+          </a>
         </div>
-
-
         <div class="cta-mini">
           평균 응답이 빠른 편이에요 · 링크/아이디를 같이 보내면 더 정확해요
         </div>

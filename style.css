@@ -12,8 +12,8 @@
 
   --shadow: 0 14px 40px rgba(0,0,0,.12);
   --radius: 16px;
-  --accent:#6b63ff;         /* 사이트 포인트(보라) */
-  --accentDeep:#5147ff;     /* 더 진한 보라 */
+  --accent:#c7c5ff;         /* 사이트 포인트(보라) */
+  --accentDeep:#a9a6ff;     /* 더 진한 보라 */
   --softBG:#f6f5ff;         /* 연한 회보라 배경 */
   --softLine:#e9e7ff;       /* 연한 보라 라인 */
   --cardShadow: 0 18px 34px rgba(17,24,39,.08);
@@ -50,7 +50,15 @@ img{ display:block; max-width:100%; }
   padding:14px 0;
 }
 .brand{ display:flex; align-items:center; }
-.brand-logo{ height:34px; width:auto; }
+.brand-logo{
+  height:48px;     /* PC 기준 */
+  width:auto;
+}
+@media (max-width: 600px){
+  .brand-logo{
+    height:40px;
+  }
+}
 
 .gnb{
   display:flex; align-items:center; gap:22px;
@@ -70,14 +78,26 @@ img{ display:block; max-width:100%; }
 
 .header-cta{ display:flex; align-items:center; gap:10px; }
 .kakao-btn{
-  display:inline-flex; align-items:center; gap:10px;
-  padding:10px 14px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 14px;          /* ↓ 패딩 줄이기 */
   border-radius:999px;
   background: var(--kakao);
   color:#111827;
-  font-weight:900;
-  box-shadow: 0 10px 22px rgba(0,0,0,.08);
+  font-weight:800;          /* ↓ 살짝 가볍게 */
+  font-size:13px;           /* ↓ 글자 크기 감소 */
+  box-shadow: 0 6px 14px rgba(0,0,0,.12);
 }
+
+.kakao-ico{
+  width:16px;
+  height:16px;
+  fill:#111;
+  flex-shrink:0;
+}
+
+
 .kakao-dot{
   width:10px; height:10px; border-radius:999px;
   background:#111827;
@@ -108,7 +128,7 @@ img{ display:block; max-width:100%; }
 }
 
 .hero-eyebrow{
-  color: rgba(255,255,255,.75);
+  color: rgba(199,197,255,.75);
   letter-spacing: .28em;
   font-weight:800;
   font-size:12px;
@@ -117,14 +137,14 @@ img{ display:block; max-width:100%; }
 .hero-title{
   margin:0 0 16px;
   color: var(--heroText);
-  font-size: 44px;
-  line-height:1.12;
-  letter-spacing:-.5px;
+  font-size: 38px;
+  line-height:1.15;
+  letter-spacing:-0.3px;
 }
-.hero-accent{
-  color: var(--brandRed);
-  font-weight:900;
-}
+.hero-accent{ color: var(--accent); font-weight:900; }
+.hero-sub{ font-size:0.85em; font-weight:800; display:inline-block; }
+
+
 .hero-points{
   margin:0;
   padding:0;
@@ -289,14 +309,14 @@ img{ display:block; max-width:100%; }
   .gnb{ display:none; }
   .hero-inner{ grid-template-columns: 1fr; }
   .device-wrap{ margin: 14px auto 0; max-width: 640px; }
-  .hero-title{ font-size: 36px; }
+  .hero-title{ font-size: 34px; }
   .biz-grid{ grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 520px){
   .biz-grid{ grid-template-columns: 1fr; }
   .hero{ min-height: unset; }
   .hero-inner{ padding: 46px 0; }
-  .hero-title{ font-size: 30px; }
+  .hero-title{ font-size: 28px; }
 }
 
 
@@ -1034,3 +1054,29 @@ body.menu-lock{
   overflow: hidden;
   touch-action: none;
 }
+
+/* 히어로 버튼 아이콘 */
+.hero-ico{
+  width:16px;
+  height:16px;
+  margin-right:6px;
+  flex-shrink:0;
+}
+
+/* 카카오 버튼 */
+.btn.kakao{
+  background:#FEE500;
+  color:#111;
+  border:0;
+}
+
+/* 텔레그램 버튼 */
+.btn.telegram{
+  background:#2AABEE;
+  color:#fff;
+  border:0;
+}
+
+/* 아이콘 색상 */
+.btn.kakao .hero-ico{ fill:#111; }
+.btn.telegram .hero-ico{ fill:#fff; }
