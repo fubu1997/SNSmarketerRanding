@@ -33,24 +33,31 @@
   });
 })();
 
-// ===== NAVER Conversion: Kakao/Telegram Click =====
+// ===== NAVER Conversion: 1 session = 1 send per channel =====
 (function () {
-  function bindNaverConv(selector, type) {
+  function bindNaverConvOnce(selector, type, key) {
     const el = document.querySelector(selector);
     if (!el) return;
 
     el.addEventListener("click", function () {
       try {
         if (!window.wcs) return;
-        const _conv = { type };     // custom001, custom002 ...
+
+        // ✅ 세션당 1회 제한
+        const sent = sessionStorage.getItem(key);
+        if (sent === "1") return;
+        sessionStorage.setItem(key, "1");
+
+        const _conv = { type }; // custom001, custom002
         wcs.trans(_conv);
       } catch (e) {}
     });
   }
 
-  // 카카오/텔레그램 분리 전환
-  bindNaverConv("#kakaoHeroBtn", "custom001");
-  bindNaverConv("#telegramHeroBtn", "custom002");
-  bindNaverConv("#kakaoCtaBtn", "custom001");
-  bindNaverConv("#telegramCtaBtn", "custom002");
+  // 카카오/텔레그램 각각 세션당 1회
+  bindNaverConvOnce("#kakaoHeroBtn", "custom001", "naver_conv_kakao");
+  bindNaverConvOnce("#kakaoCtaBtn", "custom001", "naver_conv_kakao");
+
+  bindNaverConvOnce("#telegramHeroBtn", "custom002", "naver_conv_telegram");
+  bindNaverConvOnce("#telegramCtaBtn", "custom002", "naver_conv_telegram");
 })();
