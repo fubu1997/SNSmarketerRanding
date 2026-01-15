@@ -32,3 +32,25 @@
     });
   });
 })();
+
+// ===== NAVER Conversion: Kakao/Telegram Click =====
+(function () {
+  function bindNaverConv(selector, type) {
+    const el = document.querySelector(selector);
+    if (!el) return;
+
+    el.addEventListener("click", function () {
+      try {
+        if (!window.wcs) return;
+        const _conv = { type };     // custom001, custom002 ...
+        wcs.trans(_conv);
+      } catch (e) {}
+    });
+  }
+
+  // 카카오/텔레그램 분리 전환
+  bindNaverConv("#kakaoHeroBtn", "custom001");
+  bindNaverConv("#telegramHeroBtn", "custom002");
+  bindNaverConv("#kakaoCtaBtn", "custom001");
+  bindNaverConv("#telegramCtaBtn", "custom002");
+})();
